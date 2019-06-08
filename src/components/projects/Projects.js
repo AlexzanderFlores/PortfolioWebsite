@@ -47,9 +47,11 @@ const Project = ({
           </a>
         )}
 
-        <a href={repoLink} target="_blank" rel="noreferrer noopener">
-          <button>Github Repo{limitedRepo && ' (Limited)'}</button>
-        </a>
+        {repoLink && (
+          <a href={repoLink} target="_blank" rel="noreferrer noopener">
+            <button>Github Repo{limitedRepo && ' (Limited)'}</button>
+          </a>
+        )}
       </div>
 
       {imagePath && (
@@ -86,8 +88,6 @@ export default () => {
         description="Nest Networking is a startup that helps B2B agencies find more clients. We've gathered hundreds of thousands of business's data from all over the US. Marketing agencies can then search through this data to find businesses who are in need of their services."
         liveDemo="https://nestnetworking.com"
         liveProject
-        repoLink="https://github.com/AlexzanderFlores"
-        limitedRepo
         imagePath={nestnetworking}
       />
 
@@ -97,7 +97,7 @@ export default () => {
         description="Website design &amp; development agency targeting small and local businesses. Mostly focused on helping businesses get a mobile friendly website that optimizes conversion rates."
         liveDemo="https://devdock.org"
         liveProject
-        repoLink="https://github.com/AlexzanderFlores"
+        repoLink="https://github.com/AlexzanderFlores/DevDockWebsite"
         imagePath={devdock}
       />
 
@@ -112,9 +112,9 @@ export default () => {
           ...webLanguages
         ]}
         description="Planned analytical tools for the 'Hytale' video game servers. This project is on hold/cancelled as the game 'Hytale' is not released yet."
-        liveDemo="https://hytaledata.com"
-        viewText="View Archived Website"
-        repoLink="https://github.com/AlexzanderFlores"
+        // liveDemo="https://hytaledata.com"
+        // viewText="View Archived Website"
+        repoLink="https://github.com/AlexzanderFlores/HytaleData"
         imagePath={hytaledata}
       />
 
@@ -128,9 +128,9 @@ export default () => {
           ...webLanguages
         ]}
         description="Save money while shopping online. As you view a product on top e-commerce websites the extension will check for cheaper prices on other websites. Checks are done via UPC codes. The website has its own search functionality."
-        liveDemo="https://google.com"
-        viewText="View Archived Website"
-        repoLink="https://github.com/AlexzanderFlores"
+        // liveDemo="https://google.com"
+        // viewText="View Archived Website"
+        repoLink="https://github.com/AlexzanderFlores/Never-Pay-Extra-Website"
         imagePath={neverpayextra}
       />
 
@@ -138,7 +138,7 @@ export default () => {
         name="Pro Mc Games"
         languages={['Java', 'SQL', 'Linux']}
         description="Minecraft network that served over 250,000 unique players over its two-year lifespan before being sold."
-        repoLink="https://github.com/AlexzanderFlores"
+        repoLink="https://github.com/AlexzanderFlores/ProMcGames"
         videoId="pD6Rj2oLKNs"
       />
 
@@ -146,7 +146,7 @@ export default () => {
         name="Portfolio Website"
         languages={['React JS', AWS, ...webLanguages]}
         description="The portfolio website you're viewing currently."
-        repoLink="https://github.com/AlexzanderFlores"
+        repoLink="https://github.com/AlexzanderFlores/PortfolioWebsite"
       />
     </div>
   );
