@@ -1,0 +1,117 @@
+nav {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: 80px auto;
+  grid-template-areas:
+    'nav-list-left nav-list-burger'
+    'nav-list-right nav-list-right';
+}
+
+nav ul {
+  align-items: center;
+  height: 100%;
+}
+
+nav li {
+  display: grid;
+  align-items: center;
+  text-align: center;
+  height: 36px;
+  cursor: pointer;
+  color: #828282;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+
+nav li:hover {
+  border-bottom: 2px solid #0058ff;
+}
+
+#nav-list-left {
+  grid-area: nav-list-left;
+  display: grid;
+  width: 130px;
+}
+
+#nav-list-right {
+  grid-area: nav-list-right;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  height: 0;
+  overflow-y: hidden;
+  transition-duration: 0.5s;
+}
+
+#nav-list-right.menu-open {
+  height: calc(36px * 3);
+  margin-bottom: 30px;
+}
+
+#nav-list-burger {
+  grid-area: nav-list-burger;
+  display: grid;
+  justify-self: end;
+  position: relative;
+  height: 35px;
+  width: 29px;
+  cursor: pointer;
+}
+
+#nav-list-burger span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px;
+  width: 22px;
+  margin: 0 auto;
+  background: #000;
+  border-radius: 1px;
+  transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.32s;
+}
+
+#nav-list-burger span:nth-child(1) {
+  top: 29%;
+}
+
+#nav-list-burger span:nth-child(2) {
+  top: 49%;
+}
+
+#nav-list-burger span:nth-child(3) {
+  top: 69%;
+}
+
+#nav-list-burger.menu-open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 49%;
+}
+
+#nav-list-burger.menu-open span:nth-child(2),
+#nav-list-burger.menu-open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 49%;
+}
+
+@media screen and (min-width: 720px) {
+  nav {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 80px;
+    grid-template-areas: 'nav-list-left nav-list-right';
+  }
+
+  #nav-list-right {
+    grid-area: nav-list-right;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: none;
+    grid-column-gap: 25px;
+    justify-self: end;
+    transition-duration: 0;
+    margin-bottom: 0;
+    /* Important to override calc height above */
+    height: 100% !important;
+  }
+
+  #nav-list-burger {
+    display: none;
+  }
+}

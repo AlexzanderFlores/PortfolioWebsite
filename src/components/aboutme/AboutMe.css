@@ -1,0 +1,25 @@
+#about-me,
+#about-me > * {
+  display: grid;
+}
+
+#about-me {
+  grid-row-gap: 30px;
+  justify-items: center;
+  text-align: center;
+}
+
+#about-heading {
+  grid-row-gap: 20px;
+}
+
+#about-info {
+  grid-row-gap: 20px;
+  max-width: 475px;
+}
+
+@media screen and (min-width: 900px) {
+  #about-me {
+    grid-template-columns: 1fr 2fr;
+  }
+}
