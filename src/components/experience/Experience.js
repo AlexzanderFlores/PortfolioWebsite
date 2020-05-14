@@ -1,25 +1,26 @@
-import React from 'react';
+import React from "react";
 
-import cpp from '../../media/cpp.png';
-import java from '../../media/java.png';
-import linux from '../../media/linux.png';
-import git from '../../media/git.png';
-import webdev from '../../media/webdev.png';
-import mongo from '../../media/mongo.png';
-import redis from '../../media/redis.png';
-import next from '../../media/next.png';
-import aws from '../../media/aws.png';
-import './Experience.css';
+import cpp from "../../media/cpp.png";
+import java from "../../media/java.png";
+import linux from "../../media/linux.png";
+import git from "../../media/git.png";
+import webdev from "../../media/webdev.png";
+import mongo from "../../media/mongo.png";
+import redis from "../../media/redis.png";
+import next from "../../media/next.png";
+import aws from "../../media/aws.png";
+import ts from "../../media/ts.png";
+import "./Experience.css";
 
-const calcYear = year => {
-  const result = new Date().getFullYear() - year + 1;
+const calcYear = (year) => {
+  const result = new Date().getFullYear() - year;
 
-  return result + (result === 1 ? ' year' : ' years');
+  return result + (result === 1 ? " year" : " years");
 };
 
 const Language = ({ name, path, years, desc }) => {
   const display = name;
-  name = name.replace(/ /g, '-').toLowerCase();
+  name = name.replace(/ /g, "-").toLowerCase();
 
   return (
     <div className="experience-lang card">
@@ -37,10 +38,17 @@ export default () => {
   return (
     <div id="experience">
       <Language
+        name="TypeScript"
+        path={ts}
+        years={calcYear(2019)}
+        desc="After learning about TypeScript I decided to include it in all JavaScript related projects I use."
+      />
+
+      <Language
         name="Amazon Web Services (AWS)"
         path={aws}
         years={calcYear(2018)}
-        desc="Most of my projects heavily rely on popular AWS services such as Lambda, API Gateway, DynamoDB, Cognito, and more."
+        desc="Most of my projects heavily rely on popular AWS services such as Lambda, API Gateway, Cloud Front, Cognito, and more."
       />
 
       <Language
@@ -53,7 +61,7 @@ export default () => {
       <Language
         name="Node JS, React JS, &amp; Next JS"
         path={next}
-        years={calcYear(2017)}
+        years={calcYear(2016)}
         desc="In 2017 I started learning how to host web servers with Node JS. A year later I was using React JS to build SPAs. In late 2018 I learned about Next JS which I still use today."
       />
 
