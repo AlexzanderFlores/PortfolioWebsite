@@ -143,7 +143,7 @@ export default () => {
       <Project
         name="Outside the Block Minecraft Network"
         languages={["Java", "SQL", "Linux"]}
-        description="Minecraft network that was launched and sold after two months of being up."
+        description="Minecraft network that was sold one month after being launched."
         repoLink="https://github.com/AlexzanderFlores/OutsideTheBlockBukkit"
         videoId="6K4TqXMdGWs?t=28"
       />
@@ -153,7 +153,7 @@ export default () => {
         languages={["Java", "SQL", "Linux"]}
         description="Minecraft network that served over 250,000 unique players over its two-year lifespan before being sold."
         repoLink="https://github.com/AlexzanderFlores/ProMcGames"
-        videoId="pD6Rj2oLKNs"
+        videoId="WoIhzZebwdE"
       />
 
       <Project
