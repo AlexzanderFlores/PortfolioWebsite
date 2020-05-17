@@ -2,6 +2,7 @@ import React from "react";
 
 import cpp from "../../media/cpp.png";
 import java from "../../media/java.png";
+import spigot from "../../media/spigot.png";
 import linux from "../../media/linux.png";
 import git from "../../media/git.png";
 import webdev from "../../media/webdev.png";
@@ -59,17 +60,17 @@ export default () => {
       />
 
       <Language
-        name="Node JS, React JS, &amp; Next JS"
-        path={next}
-        years={calcYear(2016)}
-        desc="In 2017 I started learning how to host web servers with Node JS. A year later I was using React JS to build SPAs. In late 2018 I learned about Next JS which I still use today."
-      />
-
-      <Language
         name="MongoDB"
         path={mongo}
         years={calcYear(2017)}
         desc="Most of my own projects have either used MongoDB or another NoSQL database technology such as AWS's DynamoDB."
+      />
+
+      <Language
+        name="Node JS, React JS, &amp; Next JS"
+        path={next}
+        years={calcYear(2016)}
+        desc="In 2017 I started learning how to host web servers with Node JS. A year later I was using React JS to build SPAs. In late 2018 I learned about Next JS which I still use today."
       />
 
       <Language
@@ -90,13 +91,20 @@ export default () => {
         name="Linux"
         path={linux}
         years={calcYear(2013)}
-        desc="I've been actively using Linux since 2013 to run various server networks and websites."
+        desc="I've been actively using Linux since 2013 to run various Minecraft networks and websites."
+      />
+
+      <Language
+        name="Bukkit/Spigot"
+        path={spigot}
+        years={calcYear(2012)}
+        desc="I've used the Bukkit/Spigot API to create custom plugins for my own Minecraft networks."
       />
 
       <Language
         name="Java"
         path={java}
-        years={calcYear(2013)}
+        years={calcYear(2012)}
         desc="After learning Java I got job offers on various Minecraft server networks. From there I made a living off of my own server for multple years."
       />
 

@@ -120,8 +120,6 @@ export default () => {
           ...webLanguages,
         ]}
         description="Planned analytical tools for the 'Hytale' video game servers. This project is on hold/cancelled as the game 'Hytale' is not released yet."
-        // liveDemo="https://hytaledata.com"
-        // viewText="View Archived Website"
         repoLink="https://github.com/AlexzanderFlores/HytaleData"
         imagePath={hytaledata}
       />
