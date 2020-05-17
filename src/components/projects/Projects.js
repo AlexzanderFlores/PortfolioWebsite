@@ -155,6 +155,20 @@ export default () => {
       />
 
       <Project
+        name="The Pond Minecraft Network"
+        languages={["Java", "SQL", "Linux"]}
+        description="Minecraft network in collaboration with Mc Pro Hosting and Kermit Plays MC"
+        videoId="bNT299-0eV4?t=45"
+      />
+
+      <Project
+        name="Grif Ball Minecraft Plugin"
+        languages={["Java", "SQL"]}
+        description="Minecraft plugin commissioned for Zexy Zek."
+        videoId="MuSrl7MI-ME"
+      />
+
+      <Project
         name="Portfolio Website"
         languages={["React JS", AWS, ...webLanguages]}
         description="The portfolio website you're viewing currently."

@@ -98,7 +98,7 @@ export default () => {
         name="Bukkit/Spigot"
         path={spigot}
         years={calcYear(2012)}
-        desc="I've used the Bukkit/Spigot API to create custom plugins for my own Minecraft networks."
+        desc="I've used the Bukkit/Spigot API to create custom plugins for my own Minecraft networks as well as work on various YouTuber's servers."
       />
 
       <Language
