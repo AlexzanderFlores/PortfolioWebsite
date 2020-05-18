@@ -80,7 +80,7 @@ export default () => {
         languages={["Java", "SQL", "Linux", "AWS", "Discord API", "Node JS"]}
         description="Uprising is my current Minecraft project. The goal is to recreate existing Minecraft games in a unique way with an improved user experience. To connect use the IP mc.PlayUprising.com"
         liveProject
-        videoId="SJIu05V5Niw"
+        videoId="oBkZkV7F73I"
       />
 
       <Project
