@@ -1,6 +1,7 @@
-import React from "react";
+import React from 'react'
 
-import "./AboutMe.css";
+import pfp from '../../media/pfp.png'
+import './AboutMe.css'
 
 export default () => {
   return (
@@ -9,10 +10,7 @@ export default () => {
         <div id="about-heading">
           <h1>About Me</h1>
 
-          <img
-            src="https://devdock.org/static/media/alex.2586cb40.png"
-            alt="Alexzander Flores"
-          />
+          <img src={pfp} alt="Alexzander Flores" />
         </div>
 
         <div id="about-info">
@@ -34,7 +32,7 @@ export default () => {
             <h3>Need to get in contact?</h3>
 
             <p>
-              Email me:{" "}
+              Email me:{' '}
               <a href="mailto:alexzanderflores@nestnetworking.com">
                 alexzanderflores@nestnetworking.com
               </a>
@@ -43,5 +41,5 @@ export default () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
